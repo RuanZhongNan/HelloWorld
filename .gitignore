@@ -27,3 +27,6 @@ pnpm-lock.yaml
 
 # 忽略测试报告文件夹
 html
+
+auto-imports.d.ts
+components.d.ts
