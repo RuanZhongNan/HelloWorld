@@ -1,3 +1,5 @@
+import { expect, test } from "vitest";
+
 let COINS = [64, 16, 4, 1];
 function coinChange(rest, idx) {
   if (rest > COINS[idx]) {
@@ -11,8 +13,13 @@ function coinChange(rest, idx) {
 
 // const coinChangeInput
 
-function main() {
-  let n = parseInt(input.value);
-  let ans = coinChange(1024 - n, 0);
-  alert(ans);
-}
+// function main() {
+//   // let n = parseInt(input.value);
+//   let ans = coinChange(1024 - n, 0);
+//   alert(ans);
+// }
+
+test("测试返回值", () => {
+  const n = 200;
+  expect(coinChange(1024 - n, 0)).toBe(17);
+});
