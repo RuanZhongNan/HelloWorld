@@ -25,7 +25,34 @@
       "./auto-imports.d.ts",
       "./components.d.ts",
       "vite/client"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "types/*": [
+        "src/types/*"
+      ],
+      "views/*": [
+        "src/views/*"
+      ],
+      "api/*": [
+        "src/apis/*"
+      ],
+      "stores/*": [
+        "src/stores/*"
+      ],
+      "routers/*": [
+        "src/routers/*"
+      ],
+      "utils/*": [
+        "src/utils/*"
+      ],
+    },
   },
   "include": [
     "src/**/*.ts",
