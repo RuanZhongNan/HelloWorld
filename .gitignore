@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 pnpm-lock.yaml
+
+# 忽略测试报告文件夹
+html
